@@ -16,6 +16,7 @@ After indexing we can use <code>merger.py</code> to merge small posting lists in
 
 ### Tf-Idf 
 <code>tfidf.py</code> retrieves the documents based up on their tf-idf score.
+
 The term frequency score can be defined as <code> *tf(t,d) = log(1+freq(t,d))* </code> where freq(t,d) is the frequency of term t occuring in document d.
 The inverse document frequency can be defined as <code>*idf(t,D) = log(N/(1+freq(t,D)))*</code> where N is the total number of documents and freq(t,D) is the number of documents containing the term t.
 
