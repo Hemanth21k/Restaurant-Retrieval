@@ -19,8 +19,7 @@ After indexing we can use <code>merger.py</code> to merge small posting lists in
 The term frequency score can be defined as <code> *tf(t,d) = log(1+freq(t,d))* </code> where freq(t,d) is the frequency of term t occuring in document d.
 The inverse document frequency can be defined as <code>*idf(t,D) = log(N/(1+freq(t,D)))*</code> where N is the total number of documents and freq(t,D) is the number of documents containing the term t.
 
-So finally the tf-idf score can be defined as <code>**tfidf(t,d) = tf(t,d) * idf(t,D)**</code>
-Top 10 results will be displayed.
+So finally the tf-idf score can be defined as <code>**tfidf(t,d) = tf(t,d) * idf(t,D)**</code> and the top 10 results will be displayed.
 
 ### BM25 model
 <code>BM25.py</code> implements **Okapi BM25** ranking function. 
