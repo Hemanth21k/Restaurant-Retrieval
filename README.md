@@ -15,7 +15,7 @@ There are a total of **51717** rows i.e. 51717 documents in the dataset folder.
 After indexing we can use <code>merger.py</code> to merge small posting lists into one large posting list.
 
 ### Tf-Idf 
-<code>tfidf.py</code> retrieves the documents based up on their tf-idf score.
+<code>tfidf.py</code> retrieves the documents based on their tf-idf score.
 
 The term frequency score can be defined as <code> *tf(t,d) = log(1+freq(t,d))* </code> where freq(t,d) is the frequency of term t occuring in document d.
 The inverse document frequency can be defined as <code>*idf(t,D) = log(N/(1+freq(t,D)))*</code> where N is the total number of documents and freq(t,D) is the number of documents containing the term t.
@@ -23,7 +23,7 @@ The inverse document frequency can be defined as <code>*idf(t,D) = log(N/(1+freq
 So finally the tf-idf score can be defined as <code>**tfidf(t,d) = tf(t,d) * idf(t,D)**</code> and the top 10 results will be displayed.
 
 ### BM25 model
-<code>BM25.py</code> implements **Okapi BM25** ranking function. 
+<code>BM25.py</code> implements **Okapi BM25** ranking function and retrieves documents based on their BM25 score. 
 For a given query Q containing terms q1,q2,q3 and so on.. the BM25 score for the document D can be defined as:
 
 ![BM25 score](https://wikimedia.org/api/rest_v1/media/math/render/svg/8624885ce5cd14936807927801f6d29c315d3828)
