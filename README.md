@@ -24,6 +24,7 @@ So finally the tf-idf score can be defined as <code>**tfidf(t,d) = tf(t,d) * idf
 
 ### BM25 model
 <code>BM25.py</code> implements **Okapi BM25** ranking function and retrieves documents based on their BM25 score. 
+
 For a given query Q containing terms q1,q2,q3 and so on.. the BM25 score for the document D can be defined as:
 
 ![BM25 score](https://wikimedia.org/api/rest_v1/media/math/render/svg/8624885ce5cd14936807927801f6d29c315d3828)
